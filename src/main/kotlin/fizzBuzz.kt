@@ -16,16 +16,16 @@ fun main() {
     var i = 0
     while (i < 100) {
         i += 1
-        print("\n$i ")
 
         if (i % 3 != 0 && i % 5 != 0) { // most likely case comes first
-            continue
+        	print("$i")
         }
-        if (i % 3 == 0) { // 2nd most likely case comes second
+        else if (i % 3 == 0) { // 2nd most likely case comes second
             print("Fizz")
         }
         if (i % 5 == 0) { // 3rd most likely case comes third
             print("Buzz")
         }
+        print("\n")
     }
 }
